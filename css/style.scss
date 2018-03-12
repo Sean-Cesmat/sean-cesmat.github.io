@@ -1,0 +1,206 @@
+$teal: #74c599;
+$teal-highlight: #83d2a8;
+$teal-bright: #36d39f;
+$gray: #f1f1f1;
+$darkGray: #333333;
+
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+
+
+html, body, p, a, h1, h2, h3, h4, h5, h6, pre, span {
+  font-family: 'Lato', sans-serif;
+}
+
+.myTeal-bg {
+  background: $teal;
+}
+.myTeal.btn {
+  background-color: $teal;
+  border: 2px solid transparent;
+}
+.myTeal.btn:hover {
+  background-color: $teal-highlight;
+}
+.myTeal.transparent-btn.btn {
+  background-color: $teal;
+  border: 2px solid transparent;
+  line-height: 33px;
+}
+.myTeal.transparent-btn.btn:hover {
+  background-color: transparent;
+  color: $darkGray;
+  border-color: $teal;
+}
+/* =========== HEADER / NAVIGATION ============ */
+header {
+  > .row {
+    margin-bottom: 0px;
+  }
+  .col.nav-col {
+    padding: 0px;
+  }
+}
+
+nav {
+  background: $gray;
+  li a {
+    color: $darkGray;
+    font-weight: bold;
+  }
+  .button-collapse {
+    float: right;
+    color: $teal;
+  }
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 50px;
+}
+
+
+/* =============== HERO IMAGE ================ */
+.hero {
+  .col.s12 {
+    padding: 0px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.slide-icon.btn {
+  overflow: hidden;
+  i {
+    transition: .5s;
+    color: #fff;
+
+  }
+  i.left:first-child {
+    transform: translateY(-40px);
+    opacity: 0;
+    color: #333;
+  }
+  i.left:nth-child(2) {
+    margin-top: 0px;
+    margin-left: -35.5px;
+    opacity: 1;
+  }
+}
+
+.slide-icon.btn:hover {
+  overflow: hidden;
+  i.left:first-child {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  i.left:nth-child(2) {
+    margin-top: 40px;
+    opacity: 0;
+  }
+}
+
+
+
+#projects {
+  padding-top: 5px;
+  padding-bottom: 40px;
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  .col.section-title {
+    float: none;
+    margin-top: 30px;
+  }
+  .proj-content-cont {
+    background: $gray;
+    p {
+      font-size: .9rem;
+    }
+  }
+  .project-logo {
+    max-width: 300px;
+    margin: 15px auto;
+    display: block;
+  }
+  .lightgallery-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      max-width: 75px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+  }
+
+  .proj-image-cont {
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    @media only screen and (max-width: $medium-screen) {
+      height: 30vw;
+    }
+  }
+  .junction-flats .proj-image-cont {
+    background: url('../images/projects/junction-flats/junction-flats_responsive.png');
+    background-position: 50% 90%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
+    }
+  }
+
+}// END PROJECTS ----------
+
+#resume {
+  img {
+    max-width: 100%;
+  }
+}
+
+footer {
+  background: #333;
+  p {
+    color: $gray;
+    text-align: center;
+    margin: 7px 0px;
+  }
+  .row {
+    margin-bottom: 0px;
+  }
+}
+
+
+@media only screen and (min-width: $medium-screen) {
+  .container {
+      width: 80%;
+  }
+
+  #projects {
+    .container .row-fluid {
+      display: flex;
+    }
+  }
+}
