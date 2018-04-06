@@ -7,9 +7,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
     <link type="text/css" rel="stylesheet" href="lightGallery/css/lightgallery.min.css" />
     <link type="text/css" rel="stylesheet" href="lightGallery/css/lg-transitions.min.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -27,31 +29,32 @@
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                       <li><a href="#about">About</a></li>
                       <li><a href="#projects">Projects</a></li>
-                      <li><a href="#resume">Resume</a></li>
+                      <li><a href="#skills">Skills</a></li>
                       <li><a href="#contact">Contact</a></li>
+                      <li><a href="sean-cesmat-resume.pdf" class="btn myTeal" target="_blank">Resume</a></li>
                     </ul>
-                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
-                    <ul id="slide-out" class="side-nav">
-                      <li><div class="user-view">
-                        <!-- <a href="#!user"><img src="images/sean_cesmat_logo.png"></a>
-                        <a href="#!name"><span class="name">Sean Cesmat</span></a>
-                        <a href="#!email"><span class="email">sean.cesmat@gmailDOTcom</span></a> -->
-                      </div></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#projects">Projects</a></li>
-                      <li><a href="#resume">Resume</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                      <li><div class="divider"></div></li>
-                      <li><a class="subheader">View My Stuff</a></li>
-                      <li><h6><i class="material-icons"></i> GitHub</h6></li>
-                    </ul>
+                    <a href="#" data-activates="slide-out" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                   </div>
                 </div>
 
               </div>
             </nav>
           </div>
+          <ul id="slide-out" class="side-nav sidenav">
+            <li><div class="user-view">
+              <!-- <a href="#!user"><img src="images/sean_cesmat_logo.png"></a>
+              <a href="#!name"><span class="name">Sean Cesmat</span></a>
+              <a href="#!email"><span class="email">sean.cesmat@gmailDOTcom</span></a> -->
+            </div></li>
+            <li><a href="#about" class="sidenav-close">About</a></li>
+            <li><a href="#projects" class="sidenav-close">Projects</a></li>
+            <li><a href="#skills" class="sidenav-close">Skills</a></li>
+            <li><a href="#contact" class="sidenav-close">Contact</a></li>
+            <li><a href="sean-cesmat-resume.pdf" class="btn myTeal" target="_blank">Resume</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">View My Stuff</a></li>
+            <li><h6><i class="material-icons"></i> GitHub</h6></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -62,14 +65,14 @@
       </div>
     </div>
 
-    <div class="row" id="about">
+    <div id="about" class="row section scrollspy">
       <div class="col s12 m8 push-m2 l6 push-l3 center-align">
         <p>
           Creative full stack web developer who loves to figure out how things work.
           Observant problem solver that leverages technology to simplify and streamline complex tasks.
           I thrive in a collaborative environment and approach everything with empathy, and compassion.
         </p>
-        <a href="#" class="btn myTeal transparent-btn slide-icon">
+        <a href="sean-cesmat-resume.pdf" class="btn myTeal transparent-btn slide-icon" target="_blank">
           <i class="material-icons left">file_download</i>
           <i class="material-icons left">assignment</i>
           RESUME
@@ -77,25 +80,266 @@
       </div>
     </div>
 
-    <div class="row myTeal-bg scrollspy" id="projects">
+    <div class="row myTeal-bg section scrollspy" id="projects">
       <div class="col s12 section-title">
         <h3 class="center-align">Projects</h3>
       </div>
       <div class="container">
 
+        <!-- =========== FroyoFeedback Row =========== -->
+        <div class="row-fluid froyo-feedback">
+          <div class="col s12 m12 l6 proj-image-cont">
+            <!-- Main project image goes here, it is set in the scss file -->
+          </div>
+
+          <div class="col s12 m12 l6 proj-content-cont center-align">
+            <div class="flex-row">
+              <img src="images/projects/white-cap/white-cap-logo-color.png" class="project-logo"  />
+              <span class="pipe">|</span>
+              <h4>Froyo Feedback</h4>
+            </div>
+            <div class="tools-used">
+              <img src="images/projects/tools/html.png" alt="html" width="40" height="40">
+              <img src="images/projects/tools/css.png" alt="css" width="40" height="40">
+              <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
+              <img src="images/projects/tools/node.png" alt="node" width="40" height="40">
+              <img src="images/projects/tools/sql.png" alt="sql" width="40" height="40">
+            </div>
+            <p>
+              Full-stack app that makes it possible for a frozen yogurt shop to
+              list out their flavors for users to create a profile and select
+              their favorite flavors. There is an admin login for the shop to
+              see all of the top favorited flavors.
+            </p>
+            <div class="row">
+              <div class="col s12 m6">
+                <a href="https://froyofeedback.herokuapp.com/" class="btn myTeal slide-icon" target="_blank">
+                  <i class="far fa-browser left"></i>
+                  <i class="far fa-browser left"></i>
+                  LIVE SITE
+                </a>
+              </div>
+              <div class="col s12 m6">
+                <a href="https://github.com/Sean-Cesmat/froyo-feedback" class="btn myTeal slide-icon" target="_blank">
+                  <i class="fab fa-github left"></i>
+                  <i class="fab fa-github left"></i>
+                  GITHUB
+                </a>
+              </div>
+            </div>
+            <!-- <ul id="jf-lightgallery" class="lightgallery-container">
+              <li data-src="images/projects/junction-flats/jf_logo_wide.jpg">
+                  <img src="images/projects/junction-flats/jf_logo_wide-thumb-640x480.jpg" />
+              </li>
+              <li data-src="images/projects/junction-flats/jf_logo_square.jpg">
+                  <img src="images/projects/junction-flats/jf_logo_square-thumb-640x480.jpg" />
+              </li>
+              <li data-src="images/projects/junction-flats/jf_front_banner.jpg">
+                  <img src="images/projects/junction-flats/jf_front_banner-thumb-640x480.jpg" />
+              </li>
+              <li data-src="images/projects/junction-flats/jf_homepage.jpg">
+                  <img src="images/projects/junction-flats/jf_homepage-thumb-640x480.jpg" />
+              </li>
+              <li data-src="images/projects/junction-flats/jf_aboard.jpg">
+                  <img src="images/projects/junction-flats/jf_aboard-thumb-640x480.jpg" />
+              </li>
+            </ul> -->
+          </div>
+        </div> <!-- ========= END FroyoFeedback Row ========= -->
+
+        <!-- =========== Ryde Row =========== -->
+        <div class="row-fluid ryde">
+
+          <div class="col s12 m12 l6 proj-content-cont center-align swap1">
+            <img src="images/projects/ryde/ryde-logo.png" class="project-logo"  />
+            <div class="tools-used">
+              <img src="images/projects/tools/html.png" alt="html" width="40" height="40">
+              <img src="images/projects/tools/css.png" alt="css" width="40" height="40">
+              <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
+              <img src="images/projects/tools/node.png" alt="node" width="40" height="40">
+              <img src="images/projects/tools/react.png" alt="react" width="40" height="40">
+              <img src="images/projects/tools/mongo.png" alt="mongo" width="40" height="40">
+            </div>
+            <p>
+              Ryde was made with a couple users in mind, commuters and travers.
+              We wanted to create an app that would help people find others near them
+              that also work near eachother so they could carpool and cut commuting costs.
+              We also thought it would be useful for people maybe traveling to nearby cities
+              or possibly even a day trip to the mountains to go skiing. They are able
+              to split the costs of the trip & hopefully make a friend along the way!
+            </p>
+            <p>
+              This was a group project I worked on with classmates:<br />Brett Spencer,
+              Scott Rosehart, and Brant Porter.
+            </p>
+
+            <div class="row">
+              <div class="col s12 m6">
+                <a href="https://ryde-app.herokuapp.com/" class="btn myTeal slide-icon" target="_blank">
+                  <i class="far fa-browser left"></i>
+                  <i class="far fa-browser left"></i>
+                  LIVE SITE
+                </a>
+              </div>
+              <div class="col s12 m6">
+                <a href="https://github.com/ScoRoc/Ryde" class="btn myTeal slide-icon" target="_blank">
+                  <i class="fab fa-github left"></i>
+                  <i class="fab fa-github left"></i>
+                  GITHUB
+                </a>
+              </div>
+            </div>
+
+            <!-- <ul id="whitecap-lightgallery" class="lightgallery-container">
+              <li data-src="images/projects/white-cap/white-cap_home.png">
+                  <img src="images/projects/white-cap/white-cap_home-thumb-640x480.png" />
+              </li>
+              <li data-src="images/projects/white-cap/white-cap_flavors.png">
+                  <img src="images/projects/white-cap/white-cap_flavors-thumb-640x480.png" />
+              </li>
+              <li data-src="images/projects/white-cap/white-cap_gallery.png">
+                  <img src="images/projects/white-cap/white-cap_gallery-thumb-640x480.png" />
+              </li>
+              <li data-src="images/projects/white-cap/white-cap_contact.png">
+                  <img src="images/projects/white-cap/white-cap_contact-thumb-640x480.png" />
+              </li>
+            </ul> -->
+          </div> <!-- === END Project Details Column -->
+
+          <div class="col s12 m12 l6 proj-image-cont swap2">
+            <!-- Main project image goes here, it is set in the scss file -->
+          </div>
+
+        </div> <!-- ========= END Ryde Row ========= -->
+
+        <!-- =========== Snake Row =========== -->
+        <div class="row-fluid snake">
+          <div class="col s12 m12 l6 proj-image-cont">
+            <!-- Main project image goes here, it is set in the scss file -->
+          </div>
+
+          <div class="col s12 m12 l6 proj-content-cont center-align">
+            <img src="images/projects/snake/snake-logo.png" class="project-logo"  />
+            <div class="tools-used">
+              <img src="images/projects/tools/html.png" alt="html" width="40" height="40">
+              <img src="images/projects/tools/css.png" alt="css" width="40" height="40">
+              <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
+              <img src="images/projects/tools/html-canvas.png" alt="html-canvas" width="40" height="40">
+            </div>
+            <p>
+              Classic Snake game created using HTMl Canvas and vanilla Javascript.
+              It is a two player game, switching turns to see who can rack up the highest score.
+              When you reach a couple different scores, there will be barriers added to the baord
+              to make it more challenging. You can turn on continuous borders if you would link
+              the game to not be ended by hitting the edge. You can change the size & speed of the snake.
+            </p>
+            <div class="row">
+              <div class="col s12 m6">
+                <a href="snake/index.html" class="btn myTeal slide-icon" target="_blank">
+                  <i class="far fa-browser left"></i>
+                  <i class="far fa-browser left"></i>
+                  LIVE SITE
+                </a>
+              </div>
+              <div class="col s12 m6">
+                <a href="https://github.com/Sean-Cesmat/Snake" class="btn myTeal slide-icon" target="_blank">
+                  <i class="fab fa-github left"></i>
+                  <i class="fab fa-github left"></i>
+                  GITHUB
+                </a>
+              </div>
+            </div>
+            <!-- <ul id="jf-lightgallery" class="lightgallery-container">
+              <li data-src="images/projects/junction-flats/jf_logo_wide.jpg">
+                  <img src="images/projects/junction-flats/jf_logo_wide-thumb-640x480.jpg" />
+              </li>
+              <li data-src="images/projects/junction-flats/jf_logo_square.jpg">
+                  <img src="images/projects/junction-flats/jf_logo_square-thumb-640x480.jpg" />
+              </li>
+              <li data-src="images/projects/junction-flats/jf_front_banner.jpg">
+                  <img src="images/projects/junction-flats/jf_front_banner-thumb-640x480.jpg" />
+              </li>
+              <li data-src="images/projects/junction-flats/jf_homepage.jpg">
+                  <img src="images/projects/junction-flats/jf_homepage-thumb-640x480.jpg" />
+              </li>
+              <li data-src="images/projects/junction-flats/jf_aboard.jpg">
+                  <img src="images/projects/junction-flats/jf_aboard-thumb-640x480.jpg" />
+              </li>
+            </ul> -->
+          </div>
+        </div> <!-- ========= END Snake Row ========= -->
+
+        <!-- =========== Project 4 Row =========== -->
+        <div class="row-fluid project4">
+
+          <div class="col s12 m12 l6 proj-content-cont center-align swap1">
+            <h4>Project 4 Goes Here</h4>
+            <!-- <img src="images/projects/ryde/ryde-logo.png" class="project-logo"  /> -->
+            <div class="tools-used">
+              <img src="images/projects/tools/html.png" alt="html" width="40" height="40">
+              <img src="images/projects/tools/css.png" alt="css" width="40" height="40">
+            </div>
+            <p>
+              Hot chicken ethical dreamcatcher photo booth DIY scenester wolf
+              franzen waistcoat VHS live-edge meh biodiesel yuccie chia. Blog
+              taxidermy selvage YOLO poke mustache. Blog art party meggings, bespoke
+              biodiesel disrupt leggings literally kinfolk DIY single-origin coffee
+              thundercats man braid poke. Selvage unicorn neutra venmo tousled vegan
+              actually farm-to-table, helvetica fingerstache church-key trust fund heirloom.
+            </p>
+
+            <div class="row">
+              <div class="col s12 m6">
+                <a href="https://ryde-app.herokuapp.com/" class="btn myTeal slide-icon" target="_blank">
+                  <i class="far fa-browser left"></i>
+                  <i class="far fa-browser left"></i>
+                  LIVE SITE
+                </a>
+              </div>
+              <div class="col s12 m6">
+                <a href="https://github.com/ScoRoc/Ryde" class="btn myTeal slide-icon" target="_blank">
+                  <i class="fab fa-github left"></i>
+                  <i class="fab fa-github left"></i>
+                  GITHUB
+                </a>
+              </div>
+            </div>
+
+            <!-- <ul id="whitecap-lightgallery" class="lightgallery-container">
+              <li data-src="images/projects/white-cap/white-cap_home.png">
+                  <img src="images/projects/white-cap/white-cap_home-thumb-640x480.png" />
+              </li>
+              <li data-src="images/projects/white-cap/white-cap_flavors.png">
+                  <img src="images/projects/white-cap/white-cap_flavors-thumb-640x480.png" />
+              </li>
+              <li data-src="images/projects/white-cap/white-cap_gallery.png">
+                  <img src="images/projects/white-cap/white-cap_gallery-thumb-640x480.png" />
+              </li>
+              <li data-src="images/projects/white-cap/white-cap_contact.png">
+                  <img src="images/projects/white-cap/white-cap_contact-thumb-640x480.png" />
+              </li>
+            </ul> -->
+          </div> <!-- === END Project Details Column -->
+
+          <div class="col s12 m12 l6 proj-image-cont swap2">
+            <!-- Main project image goes here, it is set in the scss file -->
+          </div>
+
+        </div> <!-- ========= END Project 4 Row ========= -->
+
         <!-- =========== JunctionFlats Row =========== -->
         <div class="row-fluid junction-flats">
           <div class="col s12 m12 l6 proj-image-cont">
-            <!-- Project responsive image goes here -->
+            <!-- Main project image goes here, it is set in the scss file -->
           </div>
 
           <div class="col s12 m12 l6 proj-content-cont center-align">
             <img src="images/projects/junction-flats/junction-flats_logo.png" class="project-logo"  />
             <div class="tools-used">
-              <img src="/wp-content/themes/x-child/tools/ps.jpg" alt="js" width="40" height="40"><br>
-              <img src="/wp-content/themes/x-child/tools/ai.jpg" alt="ai" width="40" height="40"><br>
-              <img src="/wp-content/themes/x-child/tools/html.png" alt="html" width="40" height="40"><br>
-              <img src="/wp-content/themes/x-child/tools/css.png" alt="css" width="40" height="40">
+              <img src="images/projects/tools/ps.jpg" alt="js" width="40" height="40">
+              <img src="images/projects/tools/ai.jpg" alt="ai" width="40" height="40">
+              <img src="images/projects/tools/html.png" alt="html" width="40" height="40">
+              <img src="images/projects/tools/css.png" alt="css" width="40" height="40">
             </div>
             <p>
               Junction Flats located in West Seattle is my biggest solo project, that I’m very proud of. I did both the branding for the building along with a customized WordPress install making it easy for them to keep listings up to date. The logo has a bit of history connected to it. It is an illustration of the Alaska Street Junction tracks that were located a block away from the building is now. The font and the colors were chosen to give it a classy and aged feel to go along with the history in the name & logo. To follow the theme, the builders added railroad ties with hanging light bulbs.
@@ -120,19 +364,218 @@
             </ul>
           </div>
         </div> <!-- ========= END JunctionFlats Row ========= -->
+
+        <!-- =========== White Cap Row =========== -->
+        <div class="row-fluid white-cap">
+
+          <div class="col s12 m12 l6 proj-content-cont center-align swap1">
+            <img src="images/projects/white-cap/white-cap-logo-color.png" class="project-logo"  />
+            <div class="tools-used">
+              <img src="images/projects/tools/ps.jpg" alt="js" width="40" height="40">
+              <img src="images/projects/tools/ai.jpg" alt="ai" width="40" height="40">
+              <img src="images/projects/tools/html.png" alt="html" width="40" height="40">
+              <img src="images/projects/tools/css.png" alt="css" width="40" height="40">
+              <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
+            </div>
+            <p>
+              I created this website for my family’s frozen yogurt shop. It was
+              an amazing experience to create a business with my family. I was
+              able to contribute to the branding, interior design, graphics and
+              this website. When I build this site I tried to figure out how to
+              draw traffic. I added the current yogurt flavors to the footer, by
+              people coming to our site to check those frequently, I was able to
+              drive a good amount of traffic. I was going for a simple and inviting design.
+              I wanted to just get the information on the site that was necessary.
+              I was also going for that family friendly ice cream shop kind of look,
+              only in this case it’s a yogurt shop.
+            </p>
+
+            <ul id="whitecap-lightgallery" class="lightgallery-container">
+              <li data-src="images/projects/white-cap/white-cap_home.png">
+                  <img src="images/projects/white-cap/white-cap_home-thumb-640x480.png" />
+              </li>
+              <li data-src="images/projects/white-cap/white-cap_flavors.png">
+                  <img src="images/projects/white-cap/white-cap_flavors-thumb-640x480.png" />
+              </li>
+              <li data-src="images/projects/white-cap/white-cap_gallery.png">
+                  <img src="images/projects/white-cap/white-cap_gallery-thumb-640x480.png" />
+              </li>
+              <li data-src="images/projects/white-cap/white-cap_contact.png">
+                  <img src="images/projects/white-cap/white-cap_contact-thumb-640x480.png" />
+              </li>
+            </ul>
+          </div> <!-- === END Project Details Column -->
+
+          <div class="col s12 m12 l6 proj-image-cont swap2">
+            <!-- Main project image goes here, it is set in the scss file -->
+          </div>
+
+        </div> <!-- ========= END White Cap Row ========= -->
+
       </div>
     </div><!-- ========== END #projects ========= -->
 
-    <div class="row  scrollspy" id="resume">
-      <div class="col s8 push-s2 m6 push-m3 l4 push-l4">
+    <div class="row section scrollspy" id="skills">
+      <!-- <div class="col s8 push-s2 m6 push-m3 l4 push-l4">
         <img src="images/sean_cesmat_logo.png" / />
+      </div> -->
+      <div class="col s12 section-title">
+        <h3 class="center-align">Skills</h3>
+      </div>
+      <div class="row">
+        <div class="col s12 skills">
+          <div class="col s12 m6 l3">
+            <div class="z-depth-2 dark-card">
+              <h5>Languages</h5>
+              <div>
+                <p class="skill-title">HTML/CSS/SCSS</p>
+                <div class="progress">
+                    <div class="determinate" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <p class="skill-title">Javascript/jQuery</p>
+                <div class="progress">
+                    <div class="determinate" style="width: 75%"></div>
+                </div>
+              </div>
+              <div>
+                <p class="skill-title">Python</p>
+                <div class="progress">
+                    <div class="determinate" style="width: 40%"></div>
+                </div>
+              </div>
+              <div>
+                <p class="skill-title">SQL</p>
+                <div class="progress">
+                    <div class="determinate" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
+
+          </div> <!--  end Languages Col -->
+
+          <div class="col s12 m6 l3">
+            <div class="z-depth-2 dark-card">
+              <h5>Frameworks</h5>
+              <div>
+                <p class="skill-title">Node/Express</p>
+                <div class="progress">
+                    <div class="determinate" style="width: 65%"></div>
+                </div>
+              </div>
+              <div>
+                <p class="skill-title">Django</p>
+                <div class="progress">
+                    <div class="determinate" style="width: 40%"></div>
+                </div>
+              </div>
+              <div>
+                <p class="skill-title">Bootstrap/Materialize</p>
+                <div class="progress">
+                    <div class="determinate" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <p class="skill-title">React</p>
+                <div class="progress">
+                    <div class="determinate" style="width: 35%"></div>
+                </div>
+              </div>
+            </div>
+          </div><!--  end Frameworks Col -->
+
+          <div class="col s12 m12 l6">
+            <div class="z-depth-2 dark-card">
+              <div class="row">
+                <div class="col s12 m6">
+
+                  <h5>Extras/Tools</h5>
+                  <div>
+                    <p class="skill-title">Git/GitHub</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 60%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="skill-title">PostgreSql</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 70%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="skill-title">MongoDB/Mongoose</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 55%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="skill-title">RESTful APIs</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col s12 m6">
+                  <div class="no-header">
+                    <p class="skill-title">Ajax</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 70%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="skill-title">EJS/JSX</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 55%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="skill-title">Photoshop/illustrator</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="skill-title">Sketch</p>
+                    <div class="progress">
+                        <div class="determinate" style="width: 35%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--  end Database Col -->
+        </div>
       </div>
 
-    </div>
+    </div> <!-- END SKILLS -->
 
-
-    <footer>
+    <footer class="section scrollspy" id="contact">
       <div class="row">
+        <div class="col s12 m6 push-m3 social-links">
+          <div>
+            <a href=""><i class="fab fa-github"></i>GitHub</a>
+          </div>
+          <div>
+            <a href="http://www.linkedin.com/in/seancesmat/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 push-m3">
+          <form action="https://formspree.io/sean.cesmat@gmail.com" method="POST">
+              <input type="text" name="name" placeholder="Name">
+              <input type="email" name="_replyto" placeholder="Email">
+              <textarea name="message" placeholder="Your message"></textarea>
+              <input type="hidden" name="_subject" value="Contact Form (SeanCesmat.com)" />
+              <input type="text" name="_gotcha" style="display:none" />
+              <button type="submit" class="btn myTeal" value="Send"><i class="far fa-envelope left"></i>Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row copyright-bg">
         <div class="col s12">
           <p>SeanCesmat.com © 2018 All Rights Reserved.</p>
         </div>
@@ -144,14 +587,15 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 
     <script src="lightGallery/js/lightgallery-all.min.js"></script>
 
     <!-- lightgallery plugins -->
-    <script src="js/lg-thumbnail.min.js"></script>
-    <script src="js/lg-fullscreen.min.js"></script>
+    <!-- <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script> -->
     <script src="js/site.js"></script>
   </body>
 </html>
