@@ -7,6 +7,8 @@ $(document).ready(function() {
      }
    );
 
+  $('.tooltipped').tooltip();
+
   jQuery('.skillbar').each(function(){
  		jQuery(this).find('.skillbar-bar').animate({
  			width:jQuery(this).attr('data-percent')

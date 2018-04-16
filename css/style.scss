@@ -23,10 +23,10 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   font-family: 'jaapokki';
   src: url('fonts/jaapokki-regular.eot');
   src: url('webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/jaapokki-regular.woff2') format('woff2'),
-       url('fonts/jaapokki-regular.woff') format('woff'),
-       url('fonts/jaapokki-regular.ttf')  format('truetype'),
-       url('fonts/jaapokki-regular.svg') format('svg');
+       url('../fonts/jaapokki-regular.woff2') format('woff2'),
+       url('../fonts/jaapokki-regular.woff') format('woff'),
+       url('../fonts/jaapokki-regular.ttf')  format('truetype'),
+       url('../fonts/jaapokki-regular.svg') format('svg');
        font-weight: normal;
        font-style: normal;
 }
@@ -224,6 +224,11 @@ nav {
       max-width: 235px;
     }
   }
+  .snake {
+    .project-logo {
+      max-width: 250px;
+    }
+  }
   .container .row-fluid {
     margin: 20px 0px 30px;
     @media only screen and (max-width: $medium-screen) {
@@ -307,11 +312,11 @@ nav {
       background-position: 70% 50%
     }
   }
-  .project4 .proj-image-cont {
-    background: url('https://images.unsplash.com/photo-1513838747056-b69972e5f504?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4fc72801b29381d4818222104df67306&auto=format&fit=crop&w=1364&q=80');
-    background-position: 50% 90%;
+  .snapcap .proj-image-cont {
+    background: url('../images/projects/snapcap/snapcap-main.jpeg');
+    background-position: 0% 90%;
     @media only screen and (max-width: $medium-screen) {
-      background-position: 70% 50%
+      background-position: 0% 50%
     }
   }
   .junction-flats .proj-image-cont {
