@@ -36,6 +36,10 @@ html, body, p, a, h1, h2, h3, h4, h5, h6, pre, span {
   font-family: 'Lato', sans-serif;
 }
 
+strong {
+  font-weight: bold !important;
+}
+
 .myTeal-bg {
   background: $teal;
 }
@@ -93,6 +97,12 @@ input:focus, button:focus, button:active, button:hover, label:focus, .btn:active
 
 textarea:focus {
   border: 1px solid $teal;
+}
+
+textarea, input {
+  height: initial !important;
+  padding: 12px !important;
+  max-width: 100%;
 }
 
 /* =========== HEADER / NAVIGATION ============ */
@@ -176,7 +186,8 @@ nav {
 }
 
 #about {
-  margin-bottom: 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 15px;
   p {
     font-size: 1.2rem;
@@ -198,7 +209,8 @@ nav {
   }
   .col.section-title {
     float: none;
-    margin-top: 30px;
+    margin-top: 72px;
+    margin-bottom: 60px;
     h3 {
       font-family: 'jaapokki', sans-serif;
       font-size: 3.5rem;
@@ -231,6 +243,7 @@ nav {
   }
   .container .row-fluid {
     margin: 20px 0px 30px;
+    min-height: 400px;
     @media only screen and (max-width: $medium-screen) {
       display: table;
     }
@@ -239,6 +252,7 @@ nav {
     background: $gray;
     p {
       font-size: 1rem;
+      padding: 0px 20px;
     }
     .tools-used {
       padding: 8px 0px;
@@ -293,6 +307,13 @@ nav {
   }
   .froyo-feedback .proj-image-cont {
     background: url('../images/projects/froyo-feedback/froyo-feedback-main2.jpeg');
+    background-position: 50% 70%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
+    }
+  }
+  .pursuit-of .proj-image-cont {
+    background: url('../images/projects/the-pursuit-of/the-pursuit-of-main.jpeg');
     background-position: 50% 90%;
     @media only screen and (max-width: $medium-screen) {
       background-position: 70% 50%
@@ -337,6 +358,7 @@ nav {
 }// END PROJECTS ----------
 
 #skills {
+  margin-bottom: 60px;
   img {
     max-width: 100%;
   }
@@ -400,7 +422,9 @@ footer {
   textarea, input[type="text"], input[type="email"] {
     color: #f7f7f7;
     background-color: #353535 !important;
-    // padding: 0px 5px !important;
+  }
+  input[type="text"], input[type="email"] {
+    max-width: calc(100% - 24px);
   }
   textarea {
     border: none;
