@@ -407,13 +407,28 @@ nav {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: #74c599;
+    // background-color: #74c599;
+    background: linear-gradient(90deg,rgba(92, 23, 166, 1) 0%, rgba(158, 96, 224, 1) 100%);
   }
 }
 
 
 #contact .fab {
   font-size: 3rem;
+}
+
+#contact {
+  .col.section-title {
+    float: none;
+    margin-top: 30px;
+    h3 {
+      font-family: 'jaapokki', sans-serif;
+      font-size: 3.5rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+  }
 }
 
 
