@@ -222,6 +222,16 @@ nav {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .indigo-slate {
+    .project-logo {
+      width: 168px;
+    }
+  }
+  .triview {
+    .project-logo {
+      width: 200px;
+    }
+  }
   .froyo-feedback {
     h4 {
       margin: 0px;
@@ -303,6 +313,34 @@ nav {
     background-size: cover !important;
     @media only screen and (max-width: $medium-screen) {
       height: 30vw;
+    }
+  }
+  .explore-surface .proj-image-cont {
+    background: url('../images/projects/explore-surface/explore-surface-main.jpg');
+    background-position: 50% 70%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
+    }
+  }
+  .indigo-slate .proj-image-cont {
+    background: url('../images/projects/indigo-slate/indigo-slate-main.jpg');
+    background-position: 50% 70%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
+    }
+  }
+  .best-of-business-ai .proj-image-cont {
+    background: url('../images/projects/best-of-business-ai/best-of-business-ai-main.jpg');
+    background-position: 50% 70%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
+    }
+  }
+  .azure-global-infra .proj-image-cont {
+    background: url('../images/projects/azure-global-infra/azure-global-infra-main.jpg');
+    background-position: 50% 70%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
     }
   }
   .froyo-feedback .proj-image-cont {
