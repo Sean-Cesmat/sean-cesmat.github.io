@@ -42,4 +42,6 @@ $(document).ready(function() {
     }
   });
 
+  jQuery('#year').text(new Date().getFullYear());
+
 });

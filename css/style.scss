@@ -222,6 +222,22 @@ nav {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .indigo-slate {
+    .project-logo {
+      width: 168px;
+    }
+  }
+  .triview {
+    .project-logo {
+      width: 200px;
+    }
+  }
+  .azure-global-infra {
+    .project-logo {
+      max-width: 420px;
+      width: 100%;
+    }
+  }
   .froyo-feedback {
     h4 {
       margin: 0px;
@@ -303,6 +319,41 @@ nav {
     background-size: cover !important;
     @media only screen and (max-width: $medium-screen) {
       height: 30vw;
+    }
+  }
+  .explore-surface .proj-image-cont {
+    background: url('../images/projects/explore-surface/explore-surface-main.jpg');
+    background-position: 50% 70%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
+    }
+  }
+  .indigo-slate .proj-image-cont {
+    background: url('../images/projects/indigo-slate/indigo-slate-main.jpg');
+    background-position: 50% 70%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
+    }
+  }
+  .best-of-business-ai .proj-image-cont {
+    background: url('../images/projects/best-of-business-ai/best-of-business-ai-main.jpg');
+    background-position: 50% 70%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
+    }
+  }
+  .triview .proj-image-cont {
+    background: url('../images/projects/triview/triview-main.jpg');
+    background-position: 50% 20%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
+    }
+  }
+  .azure-global-infra .proj-image-cont {
+    background: url('../images/projects/azure-global-infra/azure-global-infra-main.jpg');
+    background-position: 50% 70%;
+    @media only screen and (max-width: $medium-screen) {
+      background-position: 70% 50%
     }
   }
   .froyo-feedback .proj-image-cont {
@@ -407,13 +458,28 @@ nav {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: #74c599;
+    // background-color: #74c599;
+    background: linear-gradient(90deg,rgba(92, 23, 166, 1) 0%, rgba(158, 96, 224, 1) 100%);
   }
 }
 
 
 #contact .fab {
   font-size: 3rem;
+}
+
+#contact {
+  .col.section-title {
+    float: none;
+    margin-top: 30px;
+    h3 {
+      font-family: 'jaapokki', sans-serif;
+      font-size: 3.5rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+  }
 }
 
 
