@@ -201,6 +201,10 @@ nav .sidenav-trigger {
 #projects .triview .project-logo {
   width: 200px;
 }
+#projects .azure-global-infra .project-logo {
+  max-width: 420px;
+  width: 100%;
+}
 #projects .froyo-feedback h4 {
   margin: 0px;
 }
@@ -300,6 +304,15 @@ nav .sidenav-trigger {
 }
 @media only screen and (max-width: 992px) {
   #projects .best-of-business-ai .proj-image-cont {
+    background-position: 70% 50%;
+  }
+}
+#projects .triview .proj-image-cont {
+  background: url("../images/projects/triview/triview-main.jpg");
+  background-position: 50% 20%;
+}
+@media only screen and (max-width: 992px) {
+  #projects .triview .proj-image-cont {
     background-position: 70% 50%;
   }
 }
