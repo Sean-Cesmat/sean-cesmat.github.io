@@ -282,11 +282,11 @@ nav .sidenav-trigger {
 }
 #projects .explore-surface .proj-image-cont {
   background: url("../images/projects/explore-surface/explore-surface-main.jpg");
-  background-position: 50% 70%;
+  background-position: 30% 50%;
 }
 @media only screen and (max-width: 992px) {
   #projects .explore-surface .proj-image-cont {
-    background-position: 70% 50%;
+    background-position: 50% 35%;
   }
 }
 #projects .indigo-slate .proj-image-cont {
@@ -295,7 +295,7 @@ nav .sidenav-trigger {
 }
 @media only screen and (max-width: 992px) {
   #projects .indigo-slate .proj-image-cont {
-    background-position: 70% 50%;
+    background-position: 50% 40%;
   }
 }
 #projects .best-of-business-ai .proj-image-cont {
@@ -304,16 +304,16 @@ nav .sidenav-trigger {
 }
 @media only screen and (max-width: 992px) {
   #projects .best-of-business-ai .proj-image-cont {
-    background-position: 70% 50%;
+    background-position: 50% 44%;
   }
 }
 #projects .triview .proj-image-cont {
   background: url("../images/projects/triview/triview-main.jpg");
-  background-position: 50% 20%;
+  background-position: 28% 20%;
 }
 @media only screen and (max-width: 992px) {
   #projects .triview .proj-image-cont {
-    background-position: 70% 50%;
+    background-position: 50% 25%;
   }
 }
 #projects .azure-global-infra .proj-image-cont {
@@ -322,7 +322,7 @@ nav .sidenav-trigger {
 }
 @media only screen and (max-width: 992px) {
   #projects .azure-global-infra .proj-image-cont {
-    background-position: 70% 50%;
+    background-position: 50% 35%;
   }
 }
 #projects .froyo-feedback .proj-image-cont {
@@ -331,16 +331,16 @@ nav .sidenav-trigger {
 }
 @media only screen and (max-width: 992px) {
   #projects .froyo-feedback .proj-image-cont {
-    background-position: 70% 50%;
+    background-position: 50% 50%;
   }
 }
 #projects .pursuit-of .proj-image-cont {
   background: url("../images/projects/the-pursuit-of/the-pursuit-of-main.jpeg");
-  background-position: 50% 90%;
+  background-position: 50% 60%;
 }
 @media only screen and (max-width: 992px) {
   #projects .pursuit-of .proj-image-cont {
-    background-position: 70% 50%;
+    background-position: 50% 45%;
   }
 }
 #projects .ryde .proj-image-cont {
