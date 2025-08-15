@@ -20,10 +20,27 @@ strong {
 .myTeal.btn {
   background-color: #74c599;
   border: 2px solid transparent;
+  font-weight: bold;
+  line-height: 32px;
 }
 
 .myTeal.btn:hover {
   background-color: #83d2a8;
+}
+
+.myPurple.btn {
+  background: #5c17a6;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.myPurple.btn:hover {
+  background: #9e60e0;
+}
+
+.btn:focus-visible {
+  outline: blue solid 2px !important;
+  outline-offset: 1px;
 }
 
 .myTeal.transparent-btn.btn {
@@ -139,7 +156,7 @@ nav .sidenav-trigger {
 .slide-icon.btn i.left:first-child {
   transform: translateY(-40px);
   opacity: 0;
-  color: #333;
+  color: #fff;
 }
 .slide-icon.btn i.left:nth-child(2) {
   margin-top: 0px;
@@ -199,7 +216,7 @@ nav .sidenav-trigger {
   width: 168px;
 }
 #projects .triview .project-logo {
-  width: 200px;
+  width: 190px;
 }
 #projects .azure-global-infra .project-logo {
   max-width: 420px;
@@ -256,7 +273,7 @@ nav .sidenav-trigger {
 }
 #projects .project-logo {
   max-width: 300px;
-  margin: 15px auto;
+  margin: 24px auto 4px;
   display: block;
 }
 #projects .lightgallery-container {
@@ -272,12 +289,16 @@ nav .sidenav-trigger {
   max-width: 100%;
   height: auto;
 }
+#projects .project-card {
+  border-radius: 8px;
+  overflow: hidden;
+}
 #projects .proj-image-cont {
   background-size: cover !important;
 }
 @media only screen and (max-width: 992px) {
   #projects .proj-image-cont {
-    height: 30vw;
+    height: 40vw;
   }
 }
 #projects .explore-surface .proj-image-cont {
@@ -336,7 +357,7 @@ nav .sidenav-trigger {
 }
 #projects .pursuit-of .proj-image-cont {
   background: url("../images/projects/the-pursuit-of/the-pursuit-of-main.jpeg");
-  background-position: 50% 60%;
+  background-position: 42% 60%;
 }
 @media only screen and (max-width: 992px) {
   #projects .pursuit-of .proj-image-cont {
@@ -460,6 +481,10 @@ nav .sidenav-trigger {
 
 footer {
   background: #252525;
+  padding-top: 80px !important;
+}
+footer form {
+  padding-bottom: 80px;
 }
 footer textarea, footer input[type=text], footer input[type=email] {
   color: #f7f7f7;
@@ -490,7 +515,8 @@ footer .copyright-bg {
 }
 footer .social-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 60px;
   margin-bottom: 15px;
 }
 footer .social-links .fab {
@@ -504,6 +530,9 @@ footer .social-links a {
 }
 footer .social-links a:hover {
   color: #83d2a8;
+}
+footer .btn[type=submit] {
+  margin-top: 16px;
 }
 
 @media only screen and (min-width: 992px) {

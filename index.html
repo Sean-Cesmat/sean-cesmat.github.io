@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/materialize-1.0.0-beta/materialize.css">
-    <link type="text/css" rel="stylesheet" href="lightGallery/css/lightgallery.min.css" />
-    <link type="text/css" rel="stylesheet" href="lightGallery/css/lg-transitions.min.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="lightGallery/css/lightgallery.min.css" />
+    <link type="text/css" rel="stylesheet" href="lightGallery/css/lg-transitions.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -34,7 +35,7 @@
                       <li><a href="#projects">Projects</a></li>
                       <li><a href="#skills">Skills</a></li>
                       <li><a href="#contact">Contact</a></li>
-                      <li><a href="resume.pdf" class="btn myTeal" target="_blank">Resume</a></li>
+                      <li><a href="resume.pdf" class="btn myPurple" target="_blank">Resume</a></li>
                     </ul>
                     <a href="#" data-activates="slide-out" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                   </div>
@@ -53,7 +54,7 @@
             <li><a href="#projects" class="sidenav-close">Projects</a></li>
             <li><a href="#skills" class="sidenav-close">Skills</a></li>
             <li><a href="#contact" class="sidenav-close">Contact</a></li>
-            <li><a href="resume.pdf" class="btn myTeal" target="_blank">Resume</a></li>
+            <li><a href="resume.pdf" class="btn myPurple" target="_blank">Resume</a></li>
 <!--
             <li><div class="divider"></div></li>
             <li><a class="subheader">View My Stuff</a></li>
@@ -84,7 +85,7 @@
           Observant problem solver that leverages technology to simplify and streamline complex tasks.
           I thrive in a collaborative environment and approach everything with empathy, and compassion.
         </p>
-        <a href="resume.pdf" class="btn myTeal transparent-btn slide-icon" target="_blank">
+        <a href="resume.pdf" class="btn myPurple slide-icon" target="_blank">
           <i class="material-icons left">file_download</i>
           <i class="material-icons left">assignment</i>
           RESUME
@@ -99,95 +100,115 @@
       <div class="container">
 
         <!-- =========== Explore Surface Row =========== -->
-        <div class="row-fluid explore-surface">
+        <div class="row-fluid explore-surface project-card">
             <div class="col s12 m12 l6 proj-image-cont">
                 <!-- Project image set via SCSS or you can add an <img> here -->
             </div>
 
-            <div class="col s12 m12 l6 proj-content-cont center-align">
+            <div class="col s12 m12 l6 proj-content-cont left-align">
                 <img src="images/projects/explore-surface/explore-surface-logo.svg" class="project-logo" alt="Explore Surface Logo" />
 
                 <!-- TOOLS USED -->
                 <div class="tools-used">
-                <a class="tooltipped" data-position="bottom" data-tooltip="Vue.js">
-                    <img src="images/projects/tools/vue.png" alt="vue" width="40" height="40">
-                </a>
-                <a class="tooltipped" data-position="bottom" data-tooltip="SCSS">
-                    <img src="images/projects/tools/scss.png" alt="scss" width="40" height="40">
-                </a>
-                <a class="tooltipped" data-position="bottom" data-tooltip="JavaScript">
-                    <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
-                </a>
-                <a class="tooltipped" data-position="bottom" data-tooltip="Babylon.js">
-                    <img src="images/projects/tools/babylonjs.png" alt="babylon" width="40" height="40">
-                </a>
-                </div>
-
-                <p>
-                Developed for Microsoft during the pandemic, this immersive experience was built to showcase the Surface product line virtually. The homepage presented the full lineup, and each device had its own interactive 3D scene with lighting, shadows, and draggable elements like opening or closing a laptop lid.
-                </p>
-                <p>
-                I worked alongside a 3D designer who provided optimized models. I implemented the front-end experience, ensured smooth performance across devices, and supported localization across multiple regions.
-                </p>
-
-                <div class="row">
-                <div class="col s12">
-                    <a href="https://exploresurface.com/#/en-us" class="btn myTeal slide-icon" target="_blank">
-                    <i class="far fa-browser left"></i>
-                    <i class="far fa-browser left"></i>
-                    LIVE SITE
+                    <a class="tooltipped" data-position="bottom" data-tooltip="Vue.js">
+                        <img src="images/projects/tools/vue.png" alt="vue" width="40" height="40">
+                    </a>
+                    <a class="tooltipped" data-position="bottom" data-tooltip="SCSS">
+                        <img src="images/projects/tools/scss.png" alt="scss" width="40" height="40">
+                    </a>
+                    <a class="tooltipped" data-position="bottom" data-tooltip="JavaScript">
+                        <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
+                    </a>
+                    <a class="tooltipped" data-position="bottom" data-tooltip="Babylon.js">
+                        <img src="images/projects/tools/babylonjs.png" alt="babylon" width="40" height="40">
                     </a>
                 </div>
+
+                <p>
+                    Developed for Microsoft as a virtual sales tool during the COVID-19 pandemic, this interactive 3D experience showcased the Surface product line with live lighting/shadows, and draggable interactions. Originally intended for sales demonstrations, it quickly became a broader marketing and customer engagement platform.
+                </p>
+                <p>
+                    <strong>Key Contributions:</strong>
+                    <ul class="browser-default">
+                        <li>Served as lead developer, collaborating with two supporting developers.</li>
+                        <li>Integrated Babylon.js 3D models provided by the 3D designer and implemented interactive features.</li>
+                        <li>Optimized performance by balancing model detail with load times for a smooth cross-device experience.</li>
+                        <li>Implemented localization support for multi-region content.</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Collaborators:</strong> Two supporting devs, 3D designer, Designer, Creative director, Copywriter, QA specialist and project manager.
+                </p>
+
+                <div class="row center-align">
+                    <div class="col s12">
+                        <a href="https://exploresurface.com/#/en-us" class="btn myPurple slide-icon" target="_blank">
+                        <i class="far fa-browser left"></i>
+                        <i class="far fa-browser left"></i>
+                        LIVE SITE
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- ========= END Explore Surface Row ========= -->
 
         <!-- =========== IndigoSlate Row =========== -->
-        <div class="row-fluid indigo-slate">
-            <div class="col s12 m12 l6 proj-content-cont center-align swap1">
+        <div class="row-fluid indigo-slate project-card">
+            <div class="col s12 m12 l6 proj-content-cont swap1">
                 <img src="images/projects/indigo-slate/is-logo.svg" class="project-logo" alt="Indigo Slate Logo" />
                 
                 <!-- TOOLS USED -->
                 <div class="tools-used">
-                <a class="tooltipped" data-position="bottom" data-tooltip="Vue.js">
-                    <img src="images/projects/tools/vue.png" alt="vue" width="40" height="40">
-                </a>
-                <a class="tooltipped" data-position="bottom" data-tooltip="Nuxt.js">
-                    <img src="images/projects/tools/nuxt.png" alt="nuxt" width="40" height="40">
-                </a>
-                <a class="tooltipped" data-position="bottom" data-tooltip="SCSS">
-                    <img src="images/projects/tools/scss.png" alt="scss" width="40" height="40">
-                </a>
-                <a class="tooltipped" data-position="bottom" data-tooltip="Storyblok">
-                    <img src="images/projects/tools/storyblok.png" alt="storyblok" width="40" height="40">
-                </a>
-                <a class="tooltipped" data-position="bottom" data-tooltip="GSAP">
-                    <img src="images/projects/tools/gsap.png" alt="gsap" width="40" height="40">
-                </a>
-                <a class="tooltipped" data-position="bottom" data-tooltip="Lottie">
-                    <img src="images/projects/tools/lottie.png" alt="lottie" width="40" height="40">
-                </a>
+                    <a class="tooltipped" data-position="bottom" data-tooltip="Vue.js">
+                        <img src="images/projects/tools/vue.png" alt="vue" width="40" height="40">
+                    </a>
+                    <a class="tooltipped" data-position="bottom" data-tooltip="Nuxt.js">
+                        <img src="images/projects/tools/nuxt.png" alt="nuxt" width="40" height="40">
+                    </a>
+                    <a class="tooltipped" data-position="bottom" data-tooltip="SCSS">
+                        <img src="images/projects/tools/scss.png" alt="scss" width="40" height="40">
+                    </a>
+                    <a class="tooltipped" data-position="bottom" data-tooltip="JavaScript">
+                        <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
+                    </a>
+                    <a class="tooltipped" data-position="bottom" data-tooltip="Storyblok">
+                        <img src="images/projects/tools/storyblok.png" alt="storyblok" width="40" height="40">
+                    </a>
+                    <a class="tooltipped" data-position="bottom" data-tooltip="GSAP">
+                        <img src="images/projects/tools/gsap.png" alt="gsap" width="40" height="40">
+                    </a>
+                    <a class="tooltipped" data-position="bottom" data-tooltip="Lottie">
+                        <img src="images/projects/tools/lottie.png" alt="lottie" width="40" height="40">
+                    </a>
                 </div>
 
                 <p>
-                This internal project modernized Indigo Slate’s brand and web presence. I led development using a headless CMS approach, enabling cross-departmental updates with ease. We used Storyblok as the CMS and built the frontend with Nuxt.js and Vue, configured for SSR to meet CSP requirements.
+                    An internal initiative to modernize Indigo Slate’s brand and web presence through a fully reimagined, modular site. Built with a headless CMS architecture to empower teams across departments to create and update content independently.
                 </p>
                 <p>
-                I translated Figma designs into reusable components, wired them to dynamic inputs in Storyblok, and handled rendering logic. The final result was a performant, modular site with GSAP and Lottie animations to enhance storytelling and UI/UX.
+                    <strong>Key Contributions:</strong>
+                    <ul class="browser-default">
+                        <li>Led development from concept to launch.</li>
+                        <li>Selected and implemented Storyblok as the CMS for flexible content management.</li>
+                        <li>Translated Figma designs into reusable, dynamic components connected to Storyblok fields.</li>
+                        <li>Integrated GSAP and Lottie animations for visual engagement and brand expression.</li>
+                        <li>Ensured performance, scalability, and maintainability through a modular architecture.</li>
+                        <li>Built the frontend in Nuxt.js and Vue with SSR configuration for security compliance.</li>
+                    </ul>
                 </p>
                 <p>
-                <strong>Collaborators:</strong> Copywriters, designers, video editors, marketers, and a PM.
+                    <strong>Collaborators:</strong> Designer, Creative director, Copywriter, Video editor, Marketing team, QA specialist and a Project manager.
                 </p>
 
                 <div class="row">
-                <div class="col s12">
-                    <a href="https://indigoslate.com" class="btn myTeal slide-icon" target="_blank">
-                    <i class="far fa-browser left"></i>
-                    <i class="far fa-browser left"></i>
-                    LIVE SITE
-                    </a>
-                </div>
+                    <div class="col s12 center-align">
+                        <a href="https://indigoslate.com" class="btn myPurple slide-icon" target="_blank">
+                            <i class="far fa-browser left"></i>
+                            <i class="far fa-browser left"></i>
+                            LIVE SITE
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="col s12 m12 l6 proj-image-cont swap2">
@@ -197,12 +218,12 @@
         <!-- ========= END IndigoSlate Row ========= -->
 
         <!-- =========== Best of Business AI Row =========== -->
-        <div class="row-fluid best-of-business-ai">
+        <div class="row-fluid best-of-business-ai project-card">
             <div class="col s12 m12 l6 proj-image-cont">
                 <!-- Project image set via SCSS or insert <img> here -->
             </div>
 
-            <div class="col s12 m12 l6 proj-content-cont center-align">
+            <div class="col s12 m12 l6 proj-content-cont">
                 <img src="images/projects/best-of-business-ai/best-of-business-ai-logo.svg" class="project-logo" alt="Best of Business AI Logo" />
 
                 <!-- TOOLS USED -->
@@ -213,38 +234,55 @@
                 <a class="tooltipped" data-position="bottom" data-tooltip="Nuxt.js">
                     <img src="images/projects/tools/nuxt.png" alt="nuxt" width="40" height="40">
                 </a>
+                <!-- scss -->
+                <a class="tooltipped" data-position="bottom" data-tooltip="SCSS">
+                    <img src="images/projects/tools/scss.png" alt="scss" width="40" height="40">
+                </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="JavaScript">
+                        <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
+                    </a>
                 <a class="tooltipped" data-position="bottom" data-tooltip="GSAP">
                     <img src="images/projects/tools/gsap.png" alt="gsap" width="40" height="40">
                 </a>
                 </div>
 
                 <p>
-                A Microsoft project spotlighting how companies across industries are using AI in transformative ways. I built dynamic, reusable components and helped architect the front end using Nuxt.js and Vue.js, ensuring performance and scalability.
+                    A Microsoft showcase of companies transforming industries with AI, featuring a scalable design and smooth, interactive navigation for exploring case studies.
                 </p>
                 <p>
-                One of my key contributions was building the hero carousel that also served as a navigation tool, allowing users to explore featured case studies fluidly. We used GSAP to bring motion and visual polish to the experience.
+                    <strong>Key Contributions:</strong>
+                    <ul class="browser-default">
+                        <li>Co-architected the front end using Nuxt.js and Vue.js for performance and maintainability.</li>
+                        <li>Developed the hero carousel, which doubled as a navigation tool for exploring featured case studies.</li>
+                        <li>Integrated GSAP animations to bring visual polish and smooth transitions.</li>
+                        <li>Built dynamic, reusable components to support content scalability.</li>
+                    </ul>
                 </p>
                 <p>
-                This was a collaborative build with another developer, working closely with a team of creatives, strategists, and PMs.
+                    <strong>Collaborators:</strong> One other dev, Designer, Creative director, Copywriter, Video editor, QA specialist and a Project manager.
                 </p>
 
-                <!-- This project may not be live, so omitting live link for now -->
-                <!-- <div class="row">
-                <div class="col s12">
-                    <a href="URL_HERE" class="btn myTeal slide-icon" target="_blank">
-                    <i class="far fa-browser left"></i>
-                    <i class="far fa-browser left"></i>
-                    LIVE SITE
-                    </a>
+                <div class="row center-align">
+                    <!-- <div class="col s12">
+                        <a href="URL_HERE" class="btn myPurple slide-icon" target="_blank">
+                        <i class="far fa-browser left"></i>
+                        <i class="far fa-browser left"></i>
+                        LIVE SITE
+                        </a>
+                    </div> -->
+                    <button id="bobai-gallery-btn" class="btn myPurple slide-icon">
+                        <i class="far fa-images left"></i>
+                        <i class="far fa-images left"></i>
+                        GALLERY
+                    </button>
                 </div>
-                </div> -->
             </div>
         </div>
         <!-- ========= END Best of Business AI Row ========= -->
 
         <!-- =========== Triview Row =========== -->
-        <div class="row-fluid triview">
-          <div class="col s12 m12 l6 proj-content-cont center-align swap1">
+        <div class="row-fluid triview project-card">
+          <div class="col s12 m12 l6 proj-content-cont swap1">
             <img src="images/projects/triview/triview-logo.svg" class="project-logo" alt="Triview Logo" />
             <!-- TOOLS USED -->
             <div class="tools-used">
@@ -262,23 +300,36 @@
               </a>
             </div>
             <p>
-              Triview is a cloud-based analytics platform built on Microsoft Azure, providing real-time portfolio insights for commercial real estate investors and servicers. I collaborated closely with another front-end developer and a cross-functional team to deliver interactive dashboards, advanced filtering, and data visualization tools. My focus was on building modular, reusable Vue components and ensuring a seamless, responsive user experience across all devices. The platform features export/download capabilities and was engineered for both performance and accessibility.
+              A cloud-based analytics platform delivering real-time portfolio insights for commercial real estate investors. Features include interactive dashboards, advanced filtering, and data visualizations in a responsive, accessible interface.
             </p>
             <p>
-              <strong>Key Contributions:</strong> Component architecture, D3 data visualizations, export features, and responsive design.
+                <strong>Key Contributions:</strong>
+                <ul class="browser-default">
+                    <li>Built modular, reusable Vue components that could be easily removed, updated, or repurposed across the platform.</li>
+                    <li>Developed D3-powered interactive visualizations to present performance, risk, and asset-level data.</li>
+                    <li>Implemented export/download capabilities using html2canvas for on-demand reporting.</li>
+                    <li>Ensured responsive layouts and WCAG-compliant accessibility.</li>
+                    <li>Optimized performance for seamless use across devices.</li>
+                </ul>
             </p>
-            <!-- Add a link if there is a live site or demo -->
-            <!--
-            <div class="row">
+            <p>
+              <strong>Collaborators:</strong> Lead dev, Backend dev team, Designer, Creative director, Tech strategist, QA specialist and a Project manager.
+            </p>
+
+            <div class="row center-align">
               <div class="col s12">
-                <a href="TRIVIEW_LIVE_URL" class="btn myTeal slide-icon" target="_blank">
+                <!-- <a href="URL" class="btn myPurple slide-icon" target="_blank">
                   <i class="far fa-browser left"></i>
                   <i class="far fa-browser left"></i>
                   LIVE SITE
-                </a>
+                </a> -->
+                <button id="triview-gallery-btn" class="btn myPurple slide-icon" target="_blank">
+                  <i class="far fa-images left"></i>
+                  <i class="far fa-images left"></i>
+                  GALLERY
+                </button>
               </div>
             </div>
-            -->
           </div>
           <div class="col s12 m12 l6 proj-image-cont swap2">
             <!-- Project image goes here, set in SCSS or add <img> here -->
@@ -287,37 +338,50 @@
         <!-- ========= END Triview Row ========= -->
 
         <!-- =========== Azure Global Infrastructure Row =========== -->
-        <div class="row-fluid azure-global-infra">
+        <div class="row-fluid azure-global-infra project-card">
           <div class="col s12 m12 l6 proj-image-cont">
             <!-- Project image goes here, set in SCSS or add <img> here -->
           </div>
-          <div class="col s12 m12 l6 proj-content-cont center-align">
+          <div class="col s12 m12 l6 proj-content-cont">
             <img src="images/projects/azure-global-infra/azure-global-infra-logo.svg" class="project-logo" alt="Azure Global Infrastructure Logo" />
             <!-- TOOLS USED -->
             <div class="tools-used">
-              <a class="tooltipped" data-position="bottom" data-tooltip="Vue.js">
-                <img src="images/projects/tools/vue.png" alt="vue" width="40" height="40">
-              </a>
-              <a class="tooltipped" data-position="bottom" data-tooltip="Nuxt.js">
-                <img src="images/projects/tools/nuxt.png" alt="nuxt" width="40" height="40">
-              </a>
-              <a class="tooltipped" data-position="bottom" data-tooltip="GSAP">
-                <img src="images/projects/tools/gsap.png" alt="gsap" width="40" height="40">
-              </a>
-              <a class="tooltipped" data-position="bottom" data-tooltip="Babylon.js">
-                <img src="images/projects/tools/babylonjs.png" alt="babylon" width="40" height="40">
-              </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Vue.js">
+                    <img src="images/projects/tools/vue.png" alt="vue" width="40" height="40">
+                </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Nuxt.js">
+                    <img src="images/projects/tools/nuxt.png" alt="nuxt" width="40" height="40">
+                </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="JavaScript">
+                    <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
+                </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="GSAP">
+                    <img src="images/projects/tools/gsap.png" alt="gsap" width="40" height="40">
+                </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Babylon.js">
+                    <img src="images/projects/tools/babylonjs.png" alt="babylon" width="40" height="40">
+                </a>
             </div>
             <p>
-              Azure Global Infrastructure is an interactive 3D globe experience for Microsoft, allowing users to explore the company’s worldwide datacenter network. I worked alongside a 3D designer, copywriters, and technical strategists to develop globe interaction logic, integrate live data, and animate network lines. The project demanded high performance, accessibility, and precise mapping of global locations. Built with Vue/Nuxt, GSAP, and Babylon.js, this immersive experience highlights Microsoft’s infrastructure and sustainability initiatives.
+              An interactive 3D globe experience for Microsoft showcasing its global datacenter network, infrastructure, and sustainability initiatives. Users can explore precise, mapped locations with animated network lines and location-specific details in a high-performance, accessible interface.
             </p>
             <p>
-              <strong>Key Contributions:</strong> 3D globe logic, data integration, performance optimization, and accessibility.
+                <strong>Key Contributions:</strong>
+                <ul class="browser-default">
+                    <li>Developed 3D globe interaction logic and integrated datacenter data.</li>
+                    <li>Collaborated with a 3D designer who provided the 3D globe model and animations, then optimized and integrated them into the experience.</li>
+                    <li>Ensured accurate mapping of global locations.</li>
+                    <li>Maintained and updated the site to reflect new datacenter locations and content over time.</li>
+                    <li>Optimized performance and implemented accessibility best practices.</li>
+                </ul>
             </p>
-            <!-- Add a link if there is a live site or demo -->
-            <div class="row">
+            <p>
+              <strong>Collaborators:</strong> Lead dev, 3D designer, Designer, Creative director, Copywriter, Tech Strategist, QA specialist and a Project manager.
+            </p>
+
+            <div class="row center-align">
               <div class="col s12">
-                <a href="https://datacenters.microsoft.com/globe/explore/" class="btn myTeal slide-icon" target="_blank">
+                <a href="https://datacenters.microsoft.com/globe/explore/" class="btn myPurple slide-icon" target="_blank">
                   <i class="far fa-browser left"></i>
                   <i class="far fa-browser left"></i>
                   LIVE SITE
@@ -330,42 +394,57 @@
         <!-- ========= END Azure Global Infrastructure Row ========= -->
 
         <!-- =========== The Pursuit Of Row =========== -->
-        <div class="row-fluid pursuit-of">
-          <div class="col s12 m12 l6 proj-content-cont center-align swap1">
+        <div class="row-fluid pursuit-of project-card">
+          <div class="col s12 m12 l6 proj-content-cont swap1">
             <img src="images/projects/the-pursuit-of/pursuit-of-logo.png" class="project-logo" alt="The Pursuit of... App Logo"  />
             <!-- TOOLS USED -->
             <div class="tools-used">
-              <a class="tooltipped" data-position="bottom" data-tooltip="Vue.js">
-                <img src="images/projects/tools/vue.png" alt="vue" width="40" height="40">
-              </a>
-              <a class="tooltipped" data-position="bottom" data-tooltip="HTML">
-                <img src="images/projects/tools/html.png" alt="html" width="40" height="40">
-              </a>
-              <a class="tooltipped" data-position="bottom" data-tooltip="CSS">
-                <img src="images/projects/tools/css.png" alt="css" width="40" height="40">
-              </a>
-              <a class="tooltipped" data-position="bottom" data-tooltip="Javascript">
-                <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
-              </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Vue.js">
+                    <img src="images/projects/tools/vue.png" alt="vue" width="40" height="40">
+                </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="HTML">
+                    <img src="images/projects/tools/html.png" alt="html" width="40" height="40">
+                </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="CSS">
+                    <img src="images/projects/tools/css.png" alt="css" width="40" height="40">
+                </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Javascript">
+                    <img src="images/projects/tools/js.png" alt="js" width="40" height="40">
+                </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="GSAP">
+                    <img src="images/projects/tools/gsap.png" alt="gsap" width="40" height="40">
+                </a>
+                <a class="tooltipped" data-position="bottom" data-tooltip="Lottie">
+                    <img src="images/projects/tools/lottie.png" alt="lottie" width="40" height="40">
+                </a>
             </div>
             <p>
-              While I've been working at Indigo Slate I had the pleasure of working on this project with a talented team. This experience is a full page vertical snap scroll with animated transitions. The client wanted each chapter to be its own page but feel like a fluid experience so I built it in a way that you can scroll to the next or previous route without feeling like you have gone to a new page. 
-
+              A full-page vertical snap scroll e-book experience with animated transitions, designed to present each chapter as its own page while maintaining a seamless, fluid navigation flow. Built to feel immersive and continuous, the experience allows users to scroll between chapters without the disruption of traditional page loads.
             </p>
             <p>
-              <strong>Talented Team:</strong> Keyomi Toston (PM), Gregory Smith (Creative Director), Alec Whitmore (Designer), Ben Sampson (Copy), Emily Payne (Marketing Strategist)
+                <strong>Key Contributions:</strong>
+                <ul class="browser-default">
+                    <li>Engineered smooth vertical snap scrolling between chapters using route transitions.</li>
+                    <li>Developed animations and motion effects with GSAP and Lottie to enhance storytelling.</li>
+                    <li>Implemented modular, maintainable components for scalable content updates.</li>
+                    <li>Ensured performance optimization for a smooth user experience across devices.</li>
+                </ul>
             </p>
 
-            <div class="row">
+            <p>
+              <strong>Collaborators:</strong> Designer, Creative director, Copywriter, QA specialist and a Project manager.
+            </p>
+
+            <div class="row center-align">
               <div class="col s12 m12">
-                <!-- <a href="https://ebooks.t-mobile.com" class="btn myTeal slide-icon" target="_blank">
-                  <i class="far fa-browser left"></i>
-                  <i class="far fa-browser left"></i>
-                  LIVE SITE
-                </a> -->
+                <button id="the-pursuit-of-gallery-btn" class="btn myPurple slide-icon" target="_blank">
+                  <i class="far fa-video left"></i>
+                  <i class="far fa-video left"></i>
+                  VIDEO
+                </button>
               </div>
               <!-- <div class="col s12 m6">
-                <a href="https://github.com/ScoRoc/Ryde" class="btn myTeal slide-icon" target="_blank">
+                <a href="https://github.com/ScoRoc/Ryde" class="btn myPurple slide-icon" target="_blank">
                   <i class="fab fa-github left"></i>
                   <i class="fab fa-github left"></i>
                   GITHUB
@@ -408,14 +487,14 @@
             </p>
             <div class="row">
               <div class="col s12 m6">
-                <a href="snake/index.html" class="btn myTeal slide-icon" target="_blank">
+                <a href="snake/index.html" class="btn myPurple slide-icon" target="_blank">
                   <i class="far fa-browser left"></i>
                   <i class="far fa-browser left"></i>
                   LIVE SITE
                 </a>
               </div>
               <div class="col s12 m6">
-                <a href="https://github.com/Sean-Cesmat/Snake" class="btn myTeal slide-icon" target="_blank">
+                <a href="https://github.com/Sean-Cesmat/Snake" class="btn myPurple slide-icon" target="_blank">
                   <i class="fab fa-github left"></i>
                   <i class="fab fa-github left"></i>
                   GITHUB
@@ -486,7 +565,7 @@
 
             < !-- <div class="row">
               <div class="col s12">
-                <a href="http://whitecapfrozenyogurt.com/" class="btn myTeal slide-icon" target="_blank">
+                <a href="http://whitecapfrozenyogurt.com/" class="btn myPurple slide-icon" target="_blank">
                   <i class="far fa-browser left"></i>
                   <i class="far fa-browser left"></i>
                   LIVE SITE
@@ -572,7 +651,7 @@
               <div>
                 <p class="skill-title">React / Next</p>
                 <div class="progress">
-                    <div class="determinate" style="width: 58%"></div>
+                    <div class="determinate" style="width: 68%"></div>
                 </div>
               </div>
               <div>
@@ -682,7 +761,7 @@
               <textarea name="message" placeholder="Your message"></textarea>
               <input type="hidden" name="_subject" value="Contact Form (SeanCesmat.com)" />
               <input type="text" name="_gotcha" style="display:none" />
-              <button type="submit" class="btn myTeal" value="Send"><i class="far fa-envelope left"></i>Send</button>
+              <button type="submit" class="btn myPurple" value="Send"><i class="far fa-envelope left"></i>Send</button>
           </form>
         </div>
       </div>
@@ -702,7 +781,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 
-    <script src="lightGallery/js/lightgallery-all.min.js"></script>
+    <!-- <script src="lightGallery/js/lightgallery-all.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
     <!-- lightgallery plugins -->
     <!-- <script src="js/lg-thumbnail.min.js"></script>

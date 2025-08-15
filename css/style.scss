@@ -1,6 +1,9 @@
 $teal: #74c599;
 $teal-highlight: #83d2a8;
 $teal-bright: #36d39f;
+$purple: #5c17a6;
+$purple-highlight: #9e60e0;
+$purple-bright: #9e60e0;
 $gray: #f1f1f1;
 $darkGray: #252525;
 
@@ -46,9 +49,25 @@ strong {
 .myTeal.btn {
   background-color: $teal;
   border: 2px solid transparent;
+  font-weight: bold;
+  line-height: 32px;
 }
 .myTeal.btn:hover {
   background-color: $teal-highlight;
+}
+.myPurple.btn {
+  background: $purple;
+//   border: 2px solid transparent;
+  font-weight: bold;
+//   line-height: 32px;
+  border-radius: 3px;
+}
+.myPurple.btn:hover {
+  background: $purple-highlight;
+}
+.btn:focus-visible {
+  outline: blue solid 2px !important;
+  outline-offset: 1px;
 }
 .myTeal.transparent-btn.btn {
   background-color: $teal;
@@ -164,7 +183,7 @@ nav {
   i.left:first-child {
     transform: translateY(-40px);
     opacity: 0;
-    color: #333;
+    color: #fff;
   }
   i.left:nth-child(2) {
     margin-top: 0px;
@@ -229,7 +248,7 @@ nav {
   }
   .triview {
     .project-logo {
-      width: 200px;
+      width: 190px;
     }
   }
   .azure-global-infra {
@@ -293,7 +312,7 @@ nav {
   }
   .project-logo {
     max-width: 300px;
-    margin: 15px auto;
+    margin: 24px auto 4px;
     display: block;
   }
   .lightgallery-container {
@@ -312,13 +331,18 @@ nav {
 
   }
 
+  .project-card {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
   .proj-image-cont {
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
     background-size: cover !important;
     @media only screen and (max-width: $medium-screen) {
-      height: 30vw;
+      height: 40vw;
     }
   }
   .explore-surface .proj-image-cont {
@@ -365,7 +389,7 @@ nav {
   }
   .pursuit-of .proj-image-cont {
     background: url('../images/projects/the-pursuit-of/the-pursuit-of-main.jpeg');
-    background-position: 50% 60%;
+    background-position: 42% 60%;
     @media only screen and (max-width: $medium-screen) {
       background-position: 50% 45%
     }
@@ -485,6 +509,11 @@ nav {
 
 footer {
   background: $darkGray;
+  padding-top: 80px !important;
+
+  form {
+    padding-bottom: 80px;
+  }
   textarea, input[type="text"], input[type="email"] {
     color: #f7f7f7;
     background-color: #353535 !important;
@@ -515,7 +544,8 @@ footer {
   }
   .social-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 60px;
     margin-bottom: 15px;
     .fab {
       margin-right: 10px;
@@ -529,6 +559,9 @@ footer {
         color: $teal-highlight;
       }
     }
+  }
+  .btn[type="submit"] {
+    margin-top: 16px;
   }
 }
 
