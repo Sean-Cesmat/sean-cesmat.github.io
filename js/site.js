@@ -32,6 +32,29 @@ $(document).ready(function() {
       }
     ]
   });
+    
+    const exploreSurfaceLightbox = GLightbox({
+        videosWidth: "1500px",
+        elements: [
+            {
+                href: "images/projects/explore-surface/explore-surface.mp4",
+                type: "video",
+                source: "local", // HTML5 video
+                html5Video: {
+                    source: [{ src: "video/demo.mp4", type: "video/mp4" }],
+                    attributes: {
+                        controls: true
+                    }
+                }
+            }
+        ]
+    });
+
+    $("#explore-surface-gallery-btn").on("click", function (e) {
+        e.preventDefault();
+        // Simulate a click on the first gallery item
+        exploreSurfaceLightbox.open();
+    });
 
    $("#bobai-gallery-btn").on("click", function(e) {
     e.preventDefault();
